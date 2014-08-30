@@ -64,6 +64,23 @@ class LinkedList:
     def getSize(self):
         return self.size
 
+    def get(self, index):
+        if index > self.size - 1 or index < 0:
+            raise Exception("Index out of bounds")
         
+        count = 0
+        temp = self.head
+        
+        while temp is not None:
+            if count == index:
+                break
+            count += 1
+            temp = temp.next
+
+        return temp.value
+
+    
+
+
             
 
