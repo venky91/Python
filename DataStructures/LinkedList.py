@@ -3,10 +3,10 @@ class LinkedList:
         def __init__(self, value):
             self.value = value;
             self.next = None
-            self.size = 0
 
     def __init__(self):
         self.head = None
+        self.size = 0
 
     def add(self, value):
         if self.head == None:
